@@ -1,5 +1,4 @@
 # ### KESIMPULAN ###
-
 ## ( CONFIGURATION )
 1. git config (--global, --local) (user.name, user.email) "Value"
 2. git config (--global, --local) (auto.crlf) (true, input)
@@ -20,6 +19,11 @@
 9. git clean [-i, -n, -f]
 
 ## ( Browsing History )
-1. git log [filename.js, --oneline, --all, --graph, --stat, --patch, --author="name", --before="12-12-12", --after="10-10-10", --grep="Search title", -S"Search contents", --pretty="format:'%un %Cgreen %cd blalvbal'"]
+1. git log [filename.js, --oneline, --all, --graph, --stat, --patch, --author="name", --before="12-12-12", --after="10-10-10", --grep="Search title", -S"Search contents", --pretty="format:'%un %Cgreen %cd testing'"]
 2. git diff [--staged, branchA branchB, commitA commitB, --name-only, --name-status]
 3. git show (idCommit, HEAD~2) [--name-only, --name-status]
+4. git bisect start -> git bisect good idCommit -> git bisect bad idCommit -> git bisect reset
+5. git shortlog [-n, -s, -e, --before="", --after=""]
+6. git checkout idCommit fileName || Restore deleted file
+7. git blame [-e, -L 1,4] filename.js
+8. git tag [-n, -d] -a v.1.0.0 -m "Description" or git tag v.1.0.0 idCommit
