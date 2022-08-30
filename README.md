@@ -3,10 +3,13 @@
 1. git config (--global, --local) (user.name, user.email) "Value"
 2. git config (--global, --local) (auto.crlf) (true, input)
 3. git config (--global, --local) (code.editor) "code --wait"
-4. git config (--global, --local) (diff.tool) vscode
-5. git config (--global, --local) (difftool.vscode.cmd) "code --diff --wait $LOCAL $REMOTE"
-6. git config (--global, --local) alias.graph "log --oneline --all --graph"
-7. git config (--global, --local) ff no || no fast-forward merge
+4. git config (--global, --local) diff.tool vscode
+5. git config (--global, --local) difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
+6. git config (--global, --local) merge.tool p4merge
+7. git config (--global, --local) mergetool.p4merge.path "C://yourpath"
+8. git config (--global, --local) mergetool.keepBackup false
+9. git config (--global, --local) alias.graph "log --oneline --all --graph"
+10. git config (--global, --local) ff no || no fast-forward merge
 
 ## ( GETTING STARTED )
 1. git init
@@ -32,4 +35,8 @@
 ## ( Branches )
 1. git branch [-d, -D, --merged. --no-merged] newBranch
 2. git stash push [-a, -m, -am] "Message Description" -> git stash list -> git stash show 1 -> git stash apply 1 -> git stash drop 1 or git stash clear
-3. git merge {fast-forward, 3-way}
+3. git merge [--abort, --continue, --squash] {fast-forward, 3-way}
+4. git reset [--soft, --mixed, --hard] (idCommit, HEAD~1)
+5. git revert -m 1 HEAD
+6. git rebase [--continue, --skip, --abort] branchA
+7. git cherry-pick idCommit
