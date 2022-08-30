@@ -33,10 +33,18 @@
 8. git tag [-n, -d] -a v.1.0.0 -m "Description" or git tag v.1.0.0 idCommit
 
 ## ( Branches )
-1. git branch [-d, -D, --merged. --no-merged] newBranch
+1. git branch [-d, -D, --merged. --no-merged, -vv, -r] newBranch
 2. git stash push [-a, -m, -am] "Message Description" -> git stash list -> git stash show 1 -> git stash apply 1 -> git stash drop 1 or git stash clear
 3. git merge [--abort, --continue, --squash] {fast-forward, 3-way}
 4. git reset [--soft, --mixed, --hard] (idCommit, HEAD~1)
 5. git revert -m 1 HEAD
 6. git rebase [--continue, --skip, --abort] branchA
 7. git cherry-pick idCommit
+
+## ( Collaborating )
+1. git clone www.github.com/username/repository.git [ foldername ]
+2. git remote [ -v ]
+3. git remote prune origin
+4. git fetch
+5. git pull [--rebase, ]
+6. git push [-d ] origin (branch, tag)
