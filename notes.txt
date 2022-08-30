@@ -1,0 +1,9 @@
+GUI TOOLS
+- Git Kraken
+- Source Tree
+- vscode GitLens
+
+GUI MERGE TOOLS
+- K4Megre
+- KDiff
+- WinMerge (windows)
